@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cache Refresh</title>
+  <script>
+    window.onload = function() {
+      // Fügt einen zufälligen Parameter an die URL der index.html hinzu
+      var randomParam = Date.now();
+      var indexURL = 'index.html' + '?' + randomParam;
+      
+      // Leitet den Benutzer zur index.html weiter
+      window.location.replace(indexURL);
+    }
+  </script>
+</head>
+<body>
+  <h1>Cache Refresh</h1>
+  <p>Die Seite wird aktualisiert...</p>
+</body>
+</html>
