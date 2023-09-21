@@ -48,9 +48,6 @@
 		<loc>https://www.zyneonstudios.com/downloads-deadwood-fp.html</loc>
 	</url>
 	<url>
-		<loc>https://www.zyneonstudios.com/downIoads.html</loc>
-	</url>
-	<url>
 		<loc>https://www.zyneonstudios.com/404.html</loc>
 	</url>
 	<url>
@@ -76,5 +73,11 @@
 	</url>
 	<url>
 		<loc>https://www.zyneonstudios.com/palette.html</loc>
+	</url>
+	<url>
+		<loc>https://www.zyneonstudios.com/downIoads-worIds.html</loc>
+	</url>
+	<url>
+		<loc>https://www.zyneonstudios.com/downloads-plugins.html</loc>
 	</url>
 </urlset>
