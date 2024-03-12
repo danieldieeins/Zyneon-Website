@@ -14,6 +14,19 @@ body {
     border-radius: 0.5rem;
     box-shadow: black 0 0 0.8rem;
     transition: all 0.25s ease;
+    user-select: none;
+}
+
+.title h1 a {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.title h1 a:hover {
+    color: darkgray;
+    transition: all 0.25s ease;
 }
 
 .title h1 {
@@ -27,8 +40,9 @@ body {
 }
 
 .title .links a {
+    transition: none;
     text-decoration: none;
-    color: gray;
+    color: darkgray;
     font-size: 1.5rem;
     padding: 1rem 0.5rem 1rem 0.5rem;
 }
@@ -52,4 +66,60 @@ body {
 .title .links a.projects-link:hover {
     color: white;
     background: linear-gradient(45deg, #8100ff, #a041ff);
+}
+
+.title .menu {
+    display: none;
+    font-size: 2rem;
+}
+
+.title .menu i {
+    position: absolute;
+    top: 0.85rem; right: 1rem;
+}
+
+.title .menu #links {
+    display: none;
+    position: absolute;
+    background: #161b3a;
+    right: 1rem; top: 4.75rem;
+    padding: 1rem;
+    width: calc(9rem);
+    text-align: right;
+    border-radius: 0.5rem;
+    box-shadow: black 0 0 0.8rem;
+}
+
+.title .menu #links a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.title .menu #links a:hover {
+    text-decoration: none;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.title .menu #links.active {
+    display: inherit;
+}
+
+.title .menu i {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .title .links {
+        display: none;
+    }
+
+    .title .menu {
+        display: inherit;
+    }
 }
