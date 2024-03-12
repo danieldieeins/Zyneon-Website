@@ -3,7 +3,12 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: LTHoopRegular, serif;
+}
+
+@font-face {
+    font-family: LTHoopRegular;
+    src: url("../fonts/lthoop-regular.ttf");
 }
 
 .title {
@@ -42,8 +47,8 @@ body {
 
 .title .logo h1 {
     position: absolute;
-    top: -1.5rem;
-    left: 2.75rem;
+    top: -1.25rem;
+    left: 3rem;
     font-size: 2rem;
     padding: 1rem;
 }
@@ -51,15 +56,15 @@ body {
 .title .links {
     position: absolute;
     font-size: 1.5rem;
-    top: 1.1rem;
-    right: 0.5rem;
+    top: 1.18rem;
+    right: 1rem;
 }
 
 .title .links a {
     text-decoration: none;
     transition: none;
     color: darkgray;
-    padding: 1.1rem 0.5rem 1.1rem 0.5rem;
+    padding: 1.27rem 0.5rem 1.27rem 0.5rem;
 }
 
 .title .links a:hover {
@@ -132,6 +137,7 @@ body {
     width: 100%;
     padding: 2rem 0 1rem 0;
     background: linear-gradient(#050713,black,black);
+    user-select: none;
 }
 
 .footer * {
@@ -155,7 +161,7 @@ body {
 }
 
 .footer a {
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 0.25rem 0 0.25rem;
     color: lightgray;
     text-decoration: none;
 }
