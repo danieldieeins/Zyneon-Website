@@ -10,7 +10,7 @@
     <script>
         function getBrowserLanguage() {
             const browserLanguage = navigator.language || navigator.userLanguage;
-            if(browserLanguage.startsWith("de")) {
+            if(browserLanguage.toLowerCase().startsWith("de")) {
                 window.location.href = "../de"
             } else {
                 window.location.href = "../en"
