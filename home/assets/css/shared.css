@@ -7,8 +7,7 @@ body {
 }
 
 .title {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem;
     position: relative;
     background: #161b3a;
     border-radius: 0.5rem;
@@ -17,19 +16,34 @@ body {
     user-select: none;
 }
 
-.title h1 a {
+.title .logo {
+    display: flex;
+    height: 4rem;
+}
+
+.title .logo img {
+    position: absolute;
+    padding: 0.5rem;
+    margin: 0;
+    height: 3rem;
+}
+
+.title .logo h1 a {
     text-decoration: none;
     color: white;
     padding: 0;
     margin: 0;
 }
 
-.title h1 a:hover {
+.title .logo h1 a:hover {
     color: darkgray;
     transition: all 0.25s ease;
 }
 
-.title h1 {
+.title .logo h1 {
+    position: absolute;
+    top: -1.5rem;
+    left: 2.75rem;
     font-size: 2rem;
     padding: 1rem;
 }
@@ -37,7 +51,7 @@ body {
 .title .links {
     position: absolute;
     font-size: 1.5rem;
-    top: 1.25rem;
+    top: 1.1rem;
     right: 0.5rem;
 }
 
@@ -45,7 +59,7 @@ body {
     text-decoration: none;
     transition: none;
     color: darkgray;
-    padding: 1.25rem 0.5rem 1.25rem 0.5rem;
+    padding: 1.1rem 0.5rem 1.1rem 0.5rem;
 }
 
 .title .links a:hover {
@@ -78,7 +92,7 @@ body {
     font-size: 3rem;
     padding: 0.5rem;
     position: absolute;
-    right: 0.25rem; top: 0.125rem;
+    right: 0.25rem; top: 0;
 }
 
 .title .menu #links {
