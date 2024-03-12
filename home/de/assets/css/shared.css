@@ -111,6 +111,46 @@ body {
     cursor: pointer;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+    background: linear-gradient(#050713,black,black);
+}
+
+.footer * {
+    padding: 0 1rem 0 1rem;
+}
+
+.footer .lawstuff {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: gray;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.footer .copyright {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: darkgray;
+}
+
+.footer a {
+    padding: 0 0.5rem 0 0.5rem;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+    transition: all 0.25s ease;
+}
+
 @media only screen and (max-width: 768px) {
     .title {
 
