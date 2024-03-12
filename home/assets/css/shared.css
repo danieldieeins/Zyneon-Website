@@ -30,7 +30,7 @@ body {
     text-decoration: none;
     color: gray;
     font-size: 1.5rem;
-    padding: 1rem 0.5rem 0.8rem 0.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .title .links a:hover {
@@ -40,15 +40,16 @@ body {
 
 .title .links a.nexus-link:hover {
     color: white;
-    background: linear-gradient(45deg, #ff4bfb, #69b4ff);
+    background: linear-gradient(45deg, #5a88ff, #376fff);
 }
 
 .title .links a.pictures-link:hover {
-    color: white;
-    background: linear-gradient(45deg, #3562cc, #69b4ff);
+    color: black;
+    font-weight: 500;
+    background: linear-gradient(45deg, #37ff94, #8bd39f);
 }
 
 .title .links a.projects-link:hover {
     color: white;
-    background: linear-gradient(45deg, #691bbe, #8100ff);
+    background: linear-gradient(45deg, #8100ff, #a041ff);
 }
