@@ -1,4 +1,54 @@
 body {
-    background: #00030e;
+    background: #050713;
     color: white;
+    margin: 0;
+    padding: 0;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.title {
+    position: relative;
+    padding: 0.75rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+    background: #161b3a;
+    border-radius: 0.5rem;
+    box-shadow: black 0 0 0.8rem;
+    transition: all 0.25s ease;
+}
+
+.title h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.title .links {
+    position: absolute;
+    right: 0.75rem; top: 1rem;
+}
+
+.title .links a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem 0.8rem 0.5rem;
+}
+
+.title .links a:hover {
+    color: black;
+    background: white;
+}
+
+.title .links a.nexus-link:hover {
+    color: white;
+    background: linear-gradient(45deg, #ff4bfb, #69b4ff);
+}
+
+.title .links a.pictures-link:hover {
+    color: white;
+    background: linear-gradient(45deg, #3562cc, #69b4ff);
+}
+
+.title .links a.projects-link:hover {
+    color: white;
+    background: linear-gradient(45deg, #691bbe, #8100ff);
 }
