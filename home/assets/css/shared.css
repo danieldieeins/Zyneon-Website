@@ -7,9 +7,9 @@ body {
 }
 
 .title {
+    margin-left: 1rem;
+    margin-right: 1rem;
     position: relative;
-    padding: 0.75rem 1rem 0.5rem 1rem;
-    margin: 1rem;
     background: #161b3a;
     border-radius: 0.5rem;
     box-shadow: black 0 0 0.8rem;
@@ -30,21 +30,22 @@ body {
 }
 
 .title h1 {
-    padding: 0 0 0.2rem 0;
-    margin: 0;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .title .links {
     position: absolute;
-    right: 0.75rem; top: 1rem;
+    font-size: 1.5rem;
+    top: 1.25rem;
+    right: 0.5rem;
 }
 
 .title .links a {
-    transition: none;
     text-decoration: none;
+    transition: none;
     color: darkgray;
-    font-size: 1.5rem;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding: 1.25rem 0.5rem 1.25rem 0.5rem;
 }
 
 .title .links a:hover {
@@ -74,8 +75,10 @@ body {
 }
 
 .title .menu i {
+    font-size: 3rem;
+    padding: 0.5rem;
     position: absolute;
-    top: 0.85rem; right: 1rem;
+    right: 0.25rem; top: 0.125rem;
 }
 
 .title .menu #links {
@@ -85,7 +88,7 @@ body {
     right: 1rem; top: 4.75rem;
     padding: 1rem;
     width: calc(9rem);
-    text-align: right;
+    text-align: center;
     border-radius: 0.5rem;
     box-shadow: black 0 0 0.8rem;
 }
@@ -111,8 +114,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .title {
-        border-radius: 0;
-        margin: 0;
+
     }
 
     .title .links {
