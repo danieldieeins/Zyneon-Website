@@ -1,10 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Loading...</title>
-        <meta http-equiv="refresh" content="0; URL=home"/>
-        <meta http-equiv="refresh" content="3; URL=home"/>
-    </head>
-    <body style="background: #000; color: #fff">
-        <a href="home" style="font-size: 2rem; color: lightgray">Loading... Click here to try a manual redirect</a><br>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Loading</title>
+</head>
+<body bgcolor="#050713">
+    <script>
+        function getBrowserLanguage() {
+            const browserLanguage = navigator.language || navigator.userLanguage;
+            if(browserLanguage.startsWith("de")) {
+                window.location.href = "de"
+            } else {
+                window.location.href = "en"
+            }
+        }
+        window.onload = getBrowserLanguage;
+    </script>
+    <a href="en" style="color: white; font-size: 2rem;">(ENGLISH) Click here, if the automatic redirect doesn't work.</a>
+    <a href="de" style="color: white; font-size: 2rem;">(GERMAN/DEUTSCH) Klicke hier, falls du nicht automatisch weitergeleitet wirst.</a>
+</body>
 </html>
