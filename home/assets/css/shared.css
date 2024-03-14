@@ -72,18 +72,24 @@ body {
 
 .title .links a.nexus-link:hover {
     color: white;
-    background: linear-gradient(45deg, #5a88ff, #376fff);
+    background: linear-gradient(to right, #006fff, #216fe0, #4b8bea, #216fe0, #006fff);
+    animation: moveGradient 5s linear infinite;
+    background-size: 200% 200%;
 }
 
 .title .links a.pictures-link:hover {
     color: black;
     font-weight: 500;
-    background: linear-gradient(45deg, #37ff94, #8bd39f);
+    background: linear-gradient(to right, #51e84d, #64cb62, #76ad74, #64cb62, #51e84d);
+    animation: moveGradient 5s linear infinite;
+    background-size: 200% 200%;
 }
 
 .title .links a.projects-link:hover {
     color: white;
-    background: linear-gradient(45deg, #8100ff, #a041ff);
+    background: linear-gradient(to right, #8100ff, #8728e1, #954dda, #8728e1, #8100ff);
+    animation: moveGradient 5s linear infinite;
+    background-size: 200% 200%;
 }
 
 .title .menu {
@@ -217,5 +223,17 @@ body {
     .title {
         margin-right: 15rem;
         margin-left: 15rem;
+    }
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
     }
 }
