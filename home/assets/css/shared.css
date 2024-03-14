@@ -53,15 +53,16 @@ body {
 .title .links {
     position: absolute;
     font-size: 1.5rem;
-    top: 1.19rem;
-    right: 1rem;
+    top: 1.2rem;
+    right: 0.4rem;
 }
 
 .title .links a {
     text-decoration: none;
     transition: none;
     color: darkgray;
-    padding: 1.29rem 0.5rem 1.29rem 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .title .links a:hover {
@@ -96,6 +97,10 @@ body {
     position: absolute;
     right: 0.25rem; top: 0;
     transition: all 0.25s linear;
+}
+
+.title .menu i#toggle-on {
+    display: none;
 }
 
 .title .menu #links {
@@ -171,15 +176,46 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .title {
-
-    }
-
     .title .links {
         display: none;
     }
 
     .title .menu {
         display: inherit;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .title {
+        margin-right: 7rem;
+        margin-left: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        margin-right: 10rem;
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .title {
+        margin-right: 13rem;
+        margin-left: 13rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .title {
+        margin-right: 15rem;
+        margin-left: 15rem;
     }
 }
