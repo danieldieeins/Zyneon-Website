@@ -99,7 +99,7 @@ body {
     transition: all 0.25s linear;
 }
 
-.title .menu i#toggle {
+.title .menu i#toggle-on {
     display: none;
 }
 
