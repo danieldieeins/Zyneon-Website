@@ -12,11 +12,13 @@ body {
 }
 
 .title {
+    z-index: 1;
     margin: 1rem;
     position: relative;
-    background: #161b3a;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: #00000090 0 0 0.4rem;
     border-radius: 0.5rem;
-    box-shadow: black 0 0 0.8rem;
     transition: all 0.25s ease;
     user-select: none;
 }
@@ -66,30 +68,9 @@ body {
 }
 
 .title .links a:hover {
-    color: black;
-    background: white;
-}
-
-.title .links a.nexus-link:hover {
-    color: white;
-    background: linear-gradient(to right, #006fff, #216fe0, #4b8bea, #216fe0, #006fff);
-    animation: moveGradient 5s linear infinite;
-    background-size: 200% 200%;
-}
-
-.title .links a.pictures-link:hover {
-    color: black;
-    font-weight: 500;
-    background: linear-gradient(to right, #51e84d, #64cb62, #76ad74, #64cb62, #51e84d);
-    animation: moveGradient 5s linear infinite;
-    background-size: 200% 200%;
-}
-
-.title .links a.projects-link:hover {
-    color: white;
-    background: linear-gradient(to right, #8100ff, #8728e1, #954dda, #8728e1, #8100ff);
-    animation: moveGradient 5s linear infinite;
-    background-size: 200% 200%;
+    color: #ffffff;
+    background: #ffffff10;
+    backdrop-filter: blur(10px);
 }
 
 .title .menu {
@@ -112,11 +93,12 @@ body {
 .title .menu #links {
     display: none;
     position: absolute;
-    background: #161b3a;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: #00000090 0 0 0.4rem;
     right: 0; top: 5rem;
     width: calc(9rem);
     border-radius: 0.5rem;
-    box-shadow: black 0 0 0.8rem;
     padding: 1rem;
     text-align: center;
 }
@@ -142,11 +124,12 @@ body {
 
 .footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -5.55rem;
+    z-index: 1;
     width: 100%;
-    padding: 2rem 0 1rem 0;
-    background: linear-gradient(#050713,black,black);
+    padding: 1rem 0 1rem 0;
+    background: #000000;
+    box-shadow: #00000090 0 0 0.4rem;
     user-select: none;
 }
 
@@ -181,6 +164,30 @@ body {
     transition: all 0.25s ease;
 }
 
+.content {
+    z-index: 0;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content .header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content .header img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
 @media only screen and (max-width: 768px) {
     .title .links {
         display: none;
@@ -188,41 +195,6 @@ body {
 
     .title .menu {
         display: inherit;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .title {
-        margin-right: 5rem;
-        margin-left: 5rem;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    .title {
-        margin-right: 7rem;
-        margin-left: 7rem;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .title {
-        margin-right: 10rem;
-        margin-left: 10rem;
-    }
-}
-
-@media only screen and (min-width: 1500px) {
-    .title {
-        margin-right: 13rem;
-        margin-left: 13rem;
-    }
-}
-
-@media only screen and (min-width: 1920px) {
-    .title {
-        margin-right: 15rem;
-        margin-left: 15rem;
     }
 }
 
