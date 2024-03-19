@@ -193,6 +193,17 @@ body {
     background: linear-gradient(to bottom,#05071300,#050713);
 }
 
+.content .header .header-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content .header .header-content a:hover {
+    text-decoration: none;
+    color: lightgray;
+    transition: 0.25s;
+}
+
 @media only screen and (max-width: 768px) {
     .title .links {
         display: none;

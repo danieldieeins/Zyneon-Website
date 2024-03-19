@@ -1,7 +1,11 @@
-.title {
-    background: rgba(0, 0, 0, 0.45);
+body {
+    background: black;
 }
 
 .content .header {
-    background-image: url("../../../home/assets/images/rebirth-computer.png");
+    background: linear-gradient(45deg, #000fff75, #ff000075);
+}
+
+.content .header .header-content {
+    background: linear-gradient(to bottom,#00000000,#000000);
 }
