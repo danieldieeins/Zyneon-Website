@@ -16,7 +16,7 @@ body {
     margin: 1rem;
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(10px);
     box-shadow: #00000090 0 0 0.4rem;
     border-radius: 0.5rem;
@@ -63,14 +63,14 @@ body {
 .title .links a {
     text-decoration: none;
     transition: none;
-    color: darkgray;
+    color: white;
     padding: 1rem;
     border-radius: 0.5rem;
 }
 
 .title .links a:hover {
     color: #ffffff;
-    background: #ffffff10;
+    background: #ffffff20;
     backdrop-filter: blur(10px);
 }
 
@@ -106,12 +106,12 @@ body {
 
 .title .menu #links a {
     text-decoration: none;
-    color: lightgray;
+    color: #ffffff;
 }
 
 .title .menu #links a:hover {
     text-decoration: none;
-    color: white;
+    color: gray;
     transition: all 0.25s ease;
 }
 
