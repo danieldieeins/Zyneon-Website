@@ -22,27 +22,18 @@ function closeApp() {
 }
 
 function maximizeApp() {
-    window.location.href = "https://danieldieeins.github.io/Zyneon-Application/";
+    window.location.href = "../app";
 }
 
 function minimizeApp() {
-    const app = document.getElementById("application");
-    const button = document.getElementById("app-button");
-    if(app) {
-        app.style.display = "none";
-    }
-    if(button) {
-        button.style.display = "inherit";
-    }
+    window.location.href = "application.html";
 }
 
-function reopenApp() {
-    const app = document.getElementById("application");
-    const button = document.getElementById("app-button");
-    if(app) {
-        app.style.display = "inherit";
-    }
-    if(button) {
-        button.style.display = "none";
+function resolveParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.get("closeApp")!=null) {
+        if(urlParams.get("closeApp")==="true") {
+            closeApp();
+        }
     }
 }

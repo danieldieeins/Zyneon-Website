@@ -16,9 +16,9 @@ body {
 }
 
 .title {
-    z-index: 1;
     margin: 1rem;
     position: fixed;
+    z-index: 1;
     top: 0; left: 0; right: 0;
     background: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(10px);
