@@ -3,9 +3,9 @@ function hideApp() {
 }
 
 function minimizeApp() {
-    window.location.href = "../index.html?closeApp=true"
+    window.location.href = ".."
 }
 
 function closeApp() {
-    window.location.href = ".."
+    window.location.href = "../index.html?closeApp=true"
 }
