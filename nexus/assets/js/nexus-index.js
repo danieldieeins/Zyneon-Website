@@ -34,6 +34,14 @@ function resolveParameters() {
     if(urlParams.get("closeApp")!=null) {
         if(urlParams.get("closeApp")==="true") {
             closeApp();
+            removeURLParameter("closeApp");
         }
     }
+}
+
+function removeURLParameter(paramKey) {
+    const url = window.location.href;
+    const regex = new RegExp('([&\\?])' + paramKey + '=[^&]*&?', 'g');
+    const newURL = url.replace(regex, '$1').replace(/&$/, '');
+    history.replaceState(null, null, newURL);
 }
