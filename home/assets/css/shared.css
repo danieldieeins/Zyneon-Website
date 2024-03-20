@@ -276,3 +276,29 @@ span.bold {
 *.s4 {
     font-size: 2.5rem;
 }
+
+a.download-button {
+    font-size: 2rem;
+    padding: 1rem 1rem 0.7rem 1rem;
+    background: linear-gradient(45deg, mediumpurple, rebeccapurple);
+    border-radius: 0.5rem;
+    box-shadow: #00000090 0 0 0.4rem;
+    margin: 1rem;
+}
+
+a.web {
+    background: linear-gradient(45deg, steelblue, dodgerblue);;
+}
+
+a.download-button:hover {
+    color: white !important;
+    background: linear-gradient(45deg, #8e27d5, #9600ff);
+    box-shadow: #8e27d5 0 0 0.4rem;
+    font-size: 2.25rem;
+    transition: 0.25s ease all;
+}
+
+a.web:hover {
+    background: linear-gradient(45deg, #3333ff, #1515ff);;
+    box-shadow: #3333ff 0 0 0.4rem;
+}

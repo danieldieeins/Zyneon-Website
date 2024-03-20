@@ -10,3 +10,7 @@ body {
 .content .header .header-content {
     background: linear-gradient(to bottom, #000000, #00000000, #000000);
 }
+
+.content .header .header-content {
+    display: flex;
+}
