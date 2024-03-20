@@ -1,11 +1,11 @@
 function hideApp() {
-    window.location.href = "https://www.zyneonstudios.com/nexus/application.html"
+    window.location.href = "../application.html"
 }
 
 function minimizeApp() {
-    window.location.href = "https://www.zyneonstudios.com/nexus/?closeApp=true"
+    window.location.href = "../?closeApp=true"
 }
 
 function closeApp() {
-    window.location.href = "https://www.zyneonstudios.com/nexus/"
+    window.location.href = ".."
 }
