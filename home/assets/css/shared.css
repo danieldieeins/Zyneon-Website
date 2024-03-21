@@ -302,3 +302,76 @@ a.web:hover {
     background: linear-gradient(45deg, #3333ff, #1515ff);;
     box-shadow: #3333ff 0 0 0.4rem;
 }
+
+.card {
+    position: relative;
+    background: #1b1d3a;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 80rem;
+    color: #e3e3ff;
+    box-shadow: black 0 0 0.8rem;
+}
+
+.card .card-title {
+    position: relative;
+    display: flex;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: -1.75rem;
+}
+
+.card .card-title h1 {
+    position: relative;
+    font-size: 2rem;
+    border-bottom: solid;
+    padding-right: 0.1rem;
+}
+
+.card .card-title h2 {
+    position: absolute;
+    right: 1rem;
+    color: #acacda;
+    font-size: 0.75rem;
+    padding-left: 15rem;
+    text-align: right;
+    font-weight: 1;
+}
+
+.card h3 {
+    position: relative;
+    padding: 0 1rem 0 1rem;
+}
+
+.card p {
+    position: relative;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.1rem;
+    margin-bottom: -0.5rem;
+    margin-top: -0.75rem;
+}
+
+.card .links {
+    position: relative;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+}
+
+.card .links a {
+    position: relative;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #7171ff;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.card .links a:hover {
+    text-decoration: underline;
+    color: #ccccff;
+    cursor: pointer;
+}
+
+a.unused:hover {
+    text-decoration: none !important;
+    color: dimgray !important;
+    cursor: not-allowed !important;
+}
