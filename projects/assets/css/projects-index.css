@@ -1,5 +1,6 @@
 .content .header {
     background: none;
+    user-select: none;
 }
 
 .content .header .header-content {
@@ -8,6 +9,11 @@
 
 .content .main {
     background: #050713;
+}
+
+.card {
+    background: #00050c;
+    border: 1px solid #ffffff40;
 }
 
 .content .main .news {
