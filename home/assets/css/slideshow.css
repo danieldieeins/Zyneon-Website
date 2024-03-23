@@ -84,7 +84,7 @@
 
 .fade {
     animation: fade 2.5s;
-    transition: 2.5s;
+    transition: ease-in-out 2.5s;
     user-select: none;
 }
 

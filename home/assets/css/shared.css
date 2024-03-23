@@ -311,6 +311,7 @@ a.web:hover {
     max-width: 80rem;
     color: #e3e3ff;
     box-shadow: black 0 0 0.8rem;
+    text-align: left !important;
 }
 
 .card .card-title {
@@ -321,13 +322,14 @@ a.web:hover {
 }
 
 .card .card-title h1 {
+    user-select: text !important;
     position: relative;
     font-size: 2rem;
-    border-bottom: solid;
     padding-right: 0.1rem;
 }
 
 .card .card-title h2 {
+    user-select: none !important;
     position: absolute;
     right: 1rem;
     color: #acacda;
@@ -338,11 +340,13 @@ a.web:hover {
 }
 
 .card h3 {
+    user-select: text !important;
     position: relative;
     padding: 0 1rem 0 1rem;
 }
 
 .card p {
+    user-select: text !important;
     position: relative;
     padding: 0 1rem 0 1rem;
     font-size: 1.1rem;
@@ -357,16 +361,17 @@ a.web:hover {
 }
 
 .card .links a {
+    user-select: none !important;
     position: relative;
     font-size: 1.1rem;
     text-decoration: none;
-    color: #7171ff;
+    color: #7171ff !important;
     padding: 1rem 1rem 1rem 0;
 }
 
 .card .links a:hover {
     text-decoration: underline;
-    color: #ccccff;
+    color: #ccccff !important;
     cursor: pointer;
 }
 
@@ -374,4 +379,18 @@ a.unused:hover {
     text-decoration: none !important;
     color: dimgray !important;
     cursor: not-allowed !important;
+}
+
+*.card-bottom {
+    margin-bottom: 1.15rem !important;
+}
+
+.content .header .header-content .center {
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.flex {
+    display: flex;
 }

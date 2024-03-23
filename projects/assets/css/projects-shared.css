@@ -1,9 +1,10 @@
 .content .header {
-    background: none;
+    background: #0d112f;
     user-select: none;
 }
 
 .content .header .header-content {
+    position: relative;
     background: linear-gradient(to bottom,#05071300,#05071300,#050713);
 }
 
@@ -14,6 +15,22 @@
 .card {
     background: #00050c;
     border: 1px solid #ffffff40;
+}
+
+.content .header .header-content .card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    margin: 1rem;
+}
+
+.content .header .header-content .header-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    margin: 1rem;
 }
 
 .content .main .news {
